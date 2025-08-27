@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com links</title>
+    <link rel="shortcut icon" href="merdola.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>Usando Links externos</h1>
+    <!-- <a href= "link"> </a>-->
+    <p>Um link externo é aquele que nos redireciona para outro site, que não é nosso!</p>
+    <p>Você pode acessar o <a href="https://gustavoguanabara.github.io" target="_blank" rel="external">repositório público no GitHub</a>!</p>
+    <!-- target="_blank" faz abrir uma nova aba, 
+     e rel="external" indica que é relativo a um site externo -->
+    <p>Você também pode acessar o <a href="https://youtube.com/cursoemvideo/" target="_blank" rel="external">canal gratuito no YouTube</a>!</p>
+    <!-- Quando vai para outro site, recomenda-se abrir em uma nova aba!!!-->
+     <h1>Usando Links Internos</h1>
+     <p>São links que fazem ligação com outra página dentro do mesmo servidor</p>
+     <p>Esta é a primeira página do site. Se quiser, pode acessar a <a href="pag002.html" rel="next" target="_self">segunda pagina</a></p>. <!-- target ="_self" garante que não tenha outra aba-->
+     <p>Você também pode acessar a nossa <a href="noticias/pag003.html" target="_self">página de notícias</a>!</p>
+     <h1>Links para download</h1>
+     <p><small>Obs: Para verificar os media types, clique <a href="https://www.iana.org/assignments/media-types/media-types.xhtml">aqui</a>!</small></p>
+     <ul>
+        <li><a href="livro/FichaMariAto2Pt1Mina2.pdf" download="FichaMariAto2Pt1Mina2.pdf" type="application/pdf">Baixar ficha da Mari em PDF</a></li>
+        <li><a href="livro/FichaMariAto2Pt1Mina2.zip" download="FichaMariAto2Pt1Mina2.zip" type="application/zip">Baixar ficha da Mari compactado em ZIP</a></li>
+     </ul>
+</body>
+</html>

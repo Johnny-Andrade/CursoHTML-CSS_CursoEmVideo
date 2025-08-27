@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos em Hospedagem Local</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor</p>
+
+   <!-- Forma simples
+    <video src="midia/cara-correndo-webm.webm" width="500" controls></video> 
+    -->
+
+    <video poster="imagens/thumb-corrida.png" width="560" controls preload="metadata">
+        <source src="midia/cara-correndo-webm.webm" type="video/webm">
+        <source src="midia/cara-correndo-mp4.mp4" type="video/mp4">
+        <p>Seu navegador não é compatível com nosso vídeo, para baixá-lo em MP4, clique <a href="midia/cara-correndo-mp4.mp4">aqui!</a></p>
+        <!-- Ele vai ir tentando de cima pra baixo, garante mais compatibilidade com mais tipos de arquivo.
+         Obs: Vídeos hospedados localmente podem e VÃO consumir muito tráfego de dados!
+        -->
+    </video>
+    <!-- Tipos de vídeos suportados: MP4, M4V/MKV(ambos caem como mp4), WEBM e OGV (cai como ogg)-->
+
+    <h1>Inserindo Vídeos do YouTube</h1>
+    <p>Abra o vídeo desejado, clique em <strong>Compartilhar</strong> e depois em <img src="imagens/incorporar.png" alt="Ícone de Incorporar"><strong>Incorporar</strong></p>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/mRpiBvwKX6c?si=E7tHxPioz6PeE1F1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <p>O benefício deste tipo de Hospedagem é que os recursos consumidos são os do YouTube, não os do seu servidor/servidor do cliente, mas o vídeo fica aberto a qualquer pessoa.</p>
+    <p>Para que somente assinantes (ou qualquer grupo de pessoa específico) assistam o vídeo, devemos utilizar outro serviço, como o Vimeo, por exemplo. (O processo é o mesmo)</p>
+
+    <iframe src="https://player.vimeo.com/video/215921777?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" title="Diamond Jack"></iframe>
+
+    <p>O Vimeo possui pros e contras, como, por exemplo, a qualidade de vídeo maior, mas seu carregamento é mais lento.</p>
+</body>
+</html>
