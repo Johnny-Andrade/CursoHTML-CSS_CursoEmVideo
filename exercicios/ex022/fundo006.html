@@ -3,23 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo Fixo de Tela</title>
     <style>
         body{
             height: 98vh;
+            /* 
             background-color: black;
             background-image: url(imagens/predios01.jpg);
             background-position: center center;
-            background-repeat: repeat-y;
-            background-size: cover;
+            background-repeat: no-repeat;
+            background-size: cover; 
+            background-attachment: fixed;
+            */
+
             /* 
             background-size: contain; 
             Faz a imagem ser 100% exibida, criando barras laterais/verticais 
             */
+            
+            /* 
+            Shorthand - background 
+            color > image > position > repeat > [size] > attachment
+            []: não tem tido suporte, por enquanto! 
+            */
+            background: black url(imagens/predios01.jpg) center center no-repeat fixed;
+            background-size: cover;
         }
         main{
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
@@ -34,6 +46,7 @@
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident quasi aut veniam iure quidem est recusandae officiis similique ipsum voluptatum blanditiis quis accusamus, corporis a quo ex, incidunt omnis accusantium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Et ipsum cumque beatae. Sequi dolorem expedita placeat voluptates vitae architecto. Ad incidunt quo asperiores odio consequuntur molestias dolorum non quaerat ullam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste voluptas excepturi perferendis aspernatur, fuga labore officia deleniti magni repellendus expedita error, eos optio dignissimos quo, suscipit quasi veritatis ullam eaque!</p>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident quasi aut veniam iure quidem est recusandae officiis similique ipsum voluptatum blanditiis quis accusamus, corporis a quo ex, incidunt omnis accusantium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Et ipsum cumque beatae. Sequi dolorem expedita placeat voluptates vitae architecto. Ad incidunt quo asperiores odio consequuntur molestias dolorum non quaerat ullam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste voluptas excepturi perferendis aspernatur, fuga labore officia deleniti magni repellendus expedita error, eos optio dignissimos quo, suscipit quasi veritatis ullam eaque!</p>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident quasi aut veniam iure quidem est recusandae officiis similique ipsum voluptatum blanditiis quis accusamus, corporis a quo ex, incidunt omnis accusantium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Et ipsum cumque beatae. Sequi dolorem expedita placeat voluptates vitae architecto. Ad incidunt quo asperiores odio consequuntur molestias dolorum non quaerat ullam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste voluptas excepturi perferendis aspernatur, fuga labore officia deleniti magni repellendus expedita error, eos optio dignissimos quo, suscipit quasi veritatis ullam eaque!</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos voluptatem molestias porro similique dolores repellat placeat natus harum ipsum quibusdam quo deleniti velit suscipit ullam aliquid voluptates, blanditiis aut quam.</p>
     </main>
 </body>
 </html>
