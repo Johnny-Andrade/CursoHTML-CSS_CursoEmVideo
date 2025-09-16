@@ -70,29 +70,39 @@ section{
     padding-left: 30px;
     font-size: 3.5vw;
 }
+section>p{
+    padding-bottom: 2em;
+}
 section.normal{
     background-color: white;
     color: black;
 }
 section.imagem{
     background-color: rgb(51, 51, 51);
-    color: white
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.486);
+    
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 section.imagem > p{
     display: inline-block;
     padding: 5px;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.699), transparent);
+    background-color: rgba(0, 0, 0, 0.253);
+    text-shadow: 1px 1px 0px black;
 }
 main p{
     margin-bottom: 100px;
 }
 #flores{
-    background: white url(../imagens/background001.jpg) center center no-repeat fixed;
-    background-size: cover;
+    background-image:url(../imagens/background001.jpg);
+    background-position: right bottom;
 }
 #cartas{
-    background: white url(../imagens/background002.jpg) center center no-repeat fixed;
-    background-size: cover;
+    background-image: url(../imagens/background002.jpg);
+    background-position: center center;
+    
 }
 footer{
     text-align: center;
