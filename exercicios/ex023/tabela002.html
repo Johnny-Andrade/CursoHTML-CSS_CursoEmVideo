@@ -6,19 +6,24 @@
     <title>Tabelas</title>
     <style>
         body{
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: lightgray;
+            font-family: Arial, Helvetica, sans-serif;;
         }
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
         td, th{
             border: 1px solid black;
-            padding: 5px;
+            padding: 10px;
         }
         tbody{
             background-color: white;
+        }
+        thead > tr >th{ /*Não funciona em todos os navegadores, serve pra grudar a cabeça da tabela*/
+            position: sticky;
+            top: -1px;
+            background-color: rgb(70, 70, 70);
         }
         thead, tfoot{
             background-color: rgb(70, 70, 70);
@@ -29,6 +34,11 @@
             font-weight: bold;
             padding: 10px;
             background-color: darkgray;
+        }
+        tbody > tr:nth-child(2n) { 
+            /*2n = linha sim, linha não
+              odd = ímpar, even = par*/
+            background-color: lightgray;
         }
         .num{
             text-align: right;
@@ -54,7 +64,7 @@
         <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th scope="col">Estado</th>
+                <th scope="col">Estado</th> <!--O Escopo serve para mecanismos de busca-->
                 <th scope="col" style="width: 100px;">População(2022)</th>
             </tr>
         </thead>
@@ -65,7 +75,7 @@
             </tr>
         </tfoot> 
         <!--
-        Demonstração da Semântica! O pé(tfoot) sempre fica em baixo, mesmo se sua tag estiver em cima
+        Demonstração da Semântica! O pé (tfoot) sempre fica em baixo, mesmo se sua tag estiver em cima
         O mesmo ocorre com Caption e Thead.
         -->
         <tbody>
@@ -81,7 +91,6 @@
                 <td>Rio de Janeiro</td>
                 <td class="num">16.055.174</td>
             </tr>
-        </tbody>
             <tr>
                 <td>Bahia</td>
                 <td class="num">14.141.626</td>
@@ -178,6 +187,23 @@
                 <td>Roraima</td>
                 <td class="num">636.707</td>
             </tr>
+        </tbody>
     </table>
+
+    <h2>Continue rolando, a cabeça da tabela vai embora com a tabela!</h2>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, odio nisi nam, qui tempora sed eligendi magni ex vero quae doloribus nemo, facilis aliquid. Voluptas distinctio optio minus, inventore odit itaque illum numquam laudantium commodi eveniet quos nesciunt sapiente unde ratione, dolorem fugit facere vitae, ipsa labore repellat? Cum vitae ea blanditiis officia provident in earum, voluptates laudantium odit nemo amet nihil excepturi, fugiat molestiae totam doloribus optio! Molestiae minima architecto quisquam ipsum porro nam totam, earum repellendus provident. Adipisci illo architecto, vel, nihil obcaecati hic dignissimos ea eum doloremque nulla quas? Omnis culpa, esse aliquid eligendi vel explicabo minima eum adipisci quas placeat mollitia, reprehenderit consectetur nostrum. Quaerat ea quam est sed dolore similique, soluta, aut, deserunt ducimus doloremque non dignissimos at! Inventore iusto labore quia distinctio commodi possimus non esse rem ducimus enim? Culpa rem reprehenderit libero tempora corrupti, velit voluptatum recusandae, dignissimos perferendis atque quis quidem id sed at enim odio deleniti vero quasi reiciendis error. Numquam laudantium doloribus eaque, blanditiis tenetur quas voluptatum nihil, quos beatae illum vel voluptatibus in libero accusamus labore aliquid.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, odio nisi nam, qui tempora sed eligendi magni ex vero quae doloribus nemo, facilis aliquid. Voluptas distinctio optio minus, inventore odit itaque illum numquam laudantium commodi eveniet quos nesciunt sapiente unde ratione, dolorem fugit facere vitae, ipsa labore repellat? Cum vitae ea blanditiis officia provident in earum, voluptates laudantium odit nemo amet nihil excepturi, fugiat molestiae totam doloribus optio! Molestiae minima architecto quisquam ipsum porro nam totam, earum repellendus provident. Adipisci illo architecto, vel, nihil obcaecati hic dignissimos ea eum doloremque nulla quas? Omnis culpa, esse aliquid eligendi vel explicabo minima eum adipisci quas placeat mollitia, reprehenderit consectetur nostrum. Quaerat ea quam est sed dolore similique, soluta, aut, deserunt ducimus doloremque non dignissimos at! Inventore iusto labore quia distinctio commodi possimus non esse rem ducimus enim? Culpa rem reprehenderit libero tempora corrupti, velit voluptatum recusandae, dignissimos perferendis atque quis quidem id sed at enim odio deleniti vero quasi reiciendis error. Numquam laudantium doloribus eaque, blanditiis tenetur quas voluptatum nihil, quos beatae illum vel voluptatibus in libero accusamus labore aliquid.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, odio nisi nam, qui tempora sed eligendi magni ex vero quae doloribus nemo, facilis aliquid. Voluptas distinctio optio minus, inventore odit itaque illum numquam laudantium commodi eveniet quos nesciunt sapiente unde ratione, dolorem fugit facere vitae, ipsa labore repellat? Cum vitae ea blanditiis officia provident in earum, voluptates laudantium odit nemo amet nihil excepturi, fugiat molestiae totam doloribus optio! Molestiae minima architecto quisquam ipsum porro nam totam, earum repellendus provident. Adipisci illo architecto, vel, nihil obcaecati hic dignissimos ea eum doloremque nulla quas? Omnis culpa, esse aliquid eligendi vel explicabo minima eum adipisci quas placeat mollitia, reprehenderit consectetur nostrum. Quaerat ea quam est sed dolore similique, soluta, aut, deserunt ducimus doloremque non dignissimos at! Inventore iusto labore quia distinctio commodi possimus non esse rem ducimus enim? Culpa rem reprehenderit libero tempora corrupti, velit voluptatum recusandae, dignissimos perferendis atque quis quidem id sed at enim odio deleniti vero quasi reiciendis error. Numquam laudantium doloribus eaque, blanditiis tenetur quas voluptatum nihil, quos beatae illum vel voluptatibus in libero accusamus labore aliquid.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, odio nisi nam, qui tempora sed eligendi magni ex vero quae doloribus nemo, facilis aliquid. Voluptas distinctio optio minus, inventore odit itaque illum numquam laudantium commodi eveniet quos nesciunt sapiente unde ratione, dolorem fugit facere vitae, ipsa labore repellat? Cum vitae ea blanditiis officia provident in earum, voluptates laudantium odit nemo amet nihil excepturi, fugiat molestiae totam doloribus optio! Molestiae minima architecto quisquam ipsum porro nam totam, earum repellendus provident. Adipisci illo architecto, vel, nihil obcaecati hic dignissimos ea eum doloremque nulla quas? Omnis culpa, esse aliquid eligendi vel explicabo minima eum adipisci quas placeat mollitia, reprehenderit consectetur nostrum. Quaerat ea quam est sed dolore similique, soluta, aut, deserunt ducimus doloremque non dignissimos at! Inventore iusto labore quia distinctio commodi possimus non esse rem ducimus enim? Culpa rem reprehenderit libero tempora corrupti, velit voluptatum recusandae, dignissimos perferendis atque quis quidem id sed at enim odio deleniti vero quasi reiciendis error. Numquam laudantium doloribus eaque, blanditiis tenetur quas voluptatum nihil, quos beatae illum vel voluptatibus in libero accusamus labore aliquid.</p>
+    
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, odio nisi nam, qui tempora sed eligendi magni ex vero quae doloribus nemo, facilis aliquid. Voluptas distinctio optio minus, inventore odit itaque illum numquam laudantium commodi eveniet quos nesciunt sapiente unde ratione, dolorem fugit facere vitae, ipsa labore repellat? Cum vitae ea blanditiis officia provident in earum, voluptates laudantium odit nemo amet nihil excepturi, fugiat molestiae totam doloribus optio! Molestiae minima architecto quisquam ipsum porro nam totam, earum repellendus provident. Adipisci illo architecto, vel, nihil obcaecati hic dignissimos ea eum doloremque nulla quas? Omnis culpa, esse aliquid eligendi vel explicabo minima eum adipisci quas placeat mollitia, reprehenderit consectetur nostrum. Quaerat ea quam est sed dolore similique, soluta, aut, deserunt ducimus doloremque non dignissimos at! Inventore iusto labore quia distinctio commodi possimus non esse rem ducimus enim? Culpa rem reprehenderit libero tempora corrupti, velit voluptatum recusandae, dignissimos perferendis atque quis quidem id sed at enim odio deleniti vero quasi reiciendis error. Numquam laudantium doloribus eaque, blanditiis tenetur quas voluptatum nihil, quos beatae illum vel voluptatibus in libero accusamus labore aliquid.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, odio nisi nam, qui tempora sed eligendi magni ex vero quae doloribus nemo, facilis aliquid.  Adipisci illo architecto, vel, nihil obcaecati hic dignissimos ea eum doloremque nulla quas? Omnis culpa, esse aliquid eligendi vel explicabo minima eum adipisci quas placeat mollitia, reprehenderit consectetur nostrum. Quaerat ea quam est sed dolore similique, soluta, aut, deserunt ducimus doloremque non dignissimos at! Inventore iusto labore quia distinctio commodi possimus non esse rem ducimus enim? Culpa rem reprehenderit libero tempora corrupti, velit voluptatum recusandae, dignissimos perferendis atque quis quidem id sed at enim odio deleniti vero quasi reiciendis error. Numquam laudantium doloribus eaque, blanditiis tenetur quas voluptatum nihil, quos beatae illum vel voluptatibus in libero accusamus labore aliquid.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, odio nisi nam, qui tempora sed eligendi magni ex vero quae doloribus nemo, facilis aliquid. Voluptas distinctio optio minus, inventore odit itaque illum numquam laudantium commodi eveniet quos nesciunt sapiente unde ratione, dolorem fugit facere vitae, ipsa labore repellat? Cum vitae ea blanditiis officia provident in earum, voluptates laudantium odit nemo amet nihil excepturi, fugiat molestiae totam doloribus optio! Molestiae minima architecto quisquam ipsum porro nam totam, earum repellendus provident. Adipisci illo architecto, vel, nihil obcaecati hic dignissimos ea eum doloremque nulla quas?.</p>
 </body>
 </html>
