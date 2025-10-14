@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframes</title>
+</head>
+<body>
+    <h1>Meu site principal</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius, a. Assumenda in adipisci quo maxime praesentium! Cupiditate veritatis similique tenetur odit enim vitae nam iure unde, tempora consectetur? Dicta, vero.</p>
+    <iframe src="paginas-extras/pagina004.html" sandbox="allow-same-origin allow-forms allow-scripts" referrerpolicy="no-referrer"> 
+        <!-- 
+        sandbox = sandbox bloqueia o acesso de dados que sites dentro do iframe tentem fazer, segurança máxima. Se igual a allow-same-origin permite caso esteja no mesmo servidor/origem, allow-forms permite formularios... É possível colocar mais de uma configuração, como está acima.
+        
+        referrerpolicy em no-referrer diz que oq estiver carregado no iframe não vai coletar informação do usuário. 
+        -->
+        Seu navegador não é compatível com isso
+    </iframe>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, ut expedita neque quod consectetur repellat nostrum? Tenetur adipisci fuga itaque praesentium deleniti iusto! Fugiat unde tempora fuga maxime aut ea?</p>
+</body>
+</html>
