@@ -11,12 +11,42 @@
     </style>
 </head>
 <body>
-    <h1>Meu primeiro formulário</h1>
-    <!--Vai ser de um gente funcional, mas não bom-->
-    <form>
-        <p>Nome: <input type="text" name="nome" id="nome"></p>
-        <p>Sobrenome: <input type="text" name="sobrenome" id="sobrenome"></p>
+    <h1>Meu primeiro formulário:</h1>
+    
+    <!--Esse formulário é funcional, mas não bom-->
+
+
+        <form action="cadastro.php">
+        <p>Nome:
+            <input type="text" name="nome" id="inome">
+        </p>
+
+        <p>Sobrenome: 
+            <input type="text" name="sobrenome" id="isobrenome">
+        </p>
+
         <p><input type="submit" value="Enviar"></p>
     </form>
+
+
+    <!--Uma versão mais atualizada dele, os dados NÃO estão
+        protegidos, mas pelo menos o método POST faz ele não
+        aparecer na URL, diferente do GET-->
+    <h2>Formulário mais atualizado:</h2>
+
+    <form action="cadastro.php" method="POST" autocomplete="off">
+        <p><label for="inome2">Nome:</label> 
+        <input type="text" name="nome" id="inome2">
+        </p>
+
+        <p><label for="isobrenome2">Sobrenome:</label> 
+        <input type="text" name="sobrenome" id="isobrenome2">
+        </p>
+
+        <p><input type="submit" value="Enviar"></p>
+    </form>
+    <!--Método GET permite que você compartilhe o URL do site, um
+    exemplo sendo as pesquisas do Google. Ele tem um limite de 3000 Bytes.
+    Ele não deve ser usado para dados sensíveis, nem para envio de arquivos.-->
 </body>
 </html>
