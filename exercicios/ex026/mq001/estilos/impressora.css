@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+/* Estilo para Impressoras*/
+
+*{
+    margin: 10px;
+    padding: 10px;
+}
+
+html{
+    font-family: 'Courier New', Courier, monospace; 
+    /*Boa fonte para impressões, é monoespaçada e com serifa*/
+    font-size: 1.2em;
+    line-height: 1.3em;
+}
+
+menu{
+    display: none; 
+    /* Significa que não vai aparecer */
+}
+
+article::after{
+    content: 'Esse artigo foi impresso através do site www.cursoemvideo.com';
+}
+
+article{
+    width: 100%;
+}
