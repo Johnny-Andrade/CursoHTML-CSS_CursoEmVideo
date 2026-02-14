@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        div.container{
+            background-color: lightsalmon;
+            display: flex;
+        }
+        div#container1{
+            flex-direction: row;
+        }
+        div#container2{
+            flex-direction: row-reverse;
+        }
+        div#container3{
+            flex-direction: column;
+        }
+        div#container4{
+            flex-direction: column-reverse;
+        }
+        div.item{
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Flexbox e Eixos</h1>
+    <h2>Linha comum</h2>
+    <div class="container" id="container1" >
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+    </div>
+
+    <h2>Linha Reversa</h2>
+    <div class="container" id="container2" >
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+    </div>
+    <h2>Coluna Comum</h2>
+    <div class="container" id="container3" >
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>      
+    </div>
+    <h2>Coluna Reversa</h2>
+    <div class="container" id="container4" >
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>       
+    </div>
+</body>
+</html>
