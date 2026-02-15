@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        div.conteiner{
+            background-color: lightsalmon;
+            display: flex;
+            flex-flow: row nowrap;
+        }
+        div#cont2{
+            flex-wrap: wrap;
+        }
+        div#cont3{
+            flex-wrap: wrap-reverse;
+        }
+        div.item{
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Flexbox</h1>
+    <h2>Flexbox Wrap</h2>
+    <p>Abaixo temos o padrão, nowrap:</p>
+    <div class="conteiner">
+        <div class="item">Exemplo de Bloco: A</div>
+        <div class="item">Exemplo de Bloco: B</div>
+        <div class="item">Exemplo de Bloco: C</div>
+        <div class="item">Exemplo de Bloco: D</div>
+        <div class="item">Exemplo de Bloco: E</div>
+        <div class="item">Exemplo de Bloco: F</div>
+        <div class="item">Exemplo de Bloco: G</div>
+    </div> <br>
+    <p>Abaixo temos o wrap:</p>
+    <div class="conteiner" id="cont2">
+        <div class="item">Exemplo de Bloco: A</div>
+        <div class="item">Exemplo de Bloco: B</div>
+        <div class="item">Exemplo de Bloco: C</div>
+        <div class="item">Exemplo de Bloco: D</div>
+        <div class="item">Exemplo de Bloco: E</div>
+        <div class="item">Exemplo de Bloco: F</div>
+        <div class="item">Exemplo de Bloco: G</div>
+    </div> <br>
+    <p>Abaixo temos o wrap-reverse:</p>
+    <div class="conteiner" id="cont3">
+        <div class="item">Exemplo de Bloco: A</div>
+        <div class="item">Exemplo de Bloco: B</div>
+        <div class="item">Exemplo de Bloco: C</div>
+        <div class="item">Exemplo de Bloco: D</div>
+        <div class="item">Exemplo de Bloco: E</div>
+        <div class="item">Exemplo de Bloco: F</div>
+        <div class="item">Exemplo de Bloco: G</div>
+    </div>
+</body>
+</html>
