@@ -13,28 +13,36 @@
         div.conteiner{
             background-color: lightsalmon;
             display: flex;
-            flex-flow: row wrap;
+            flex-flow: row nowrap;
         }
 
         div.item{
             background-color: lightblue;
             border: 1px solid black;
             text-align: center;
-            flex-basis: 150px;
+            flex-basis: 250px;
+        }
+        div#item1{
+            flex-shrink: 1;
+            flex-grow: 0;
+        }
+        div#item2{
+            flex-shrink: 1;
+            flex-grow: 1;
+        }
+        div#item3{
+            flex-shrink: 0;
+            flex-grow: 1;
         }
     </style>
 </head>
 <body>
     <h1>Flexbox</h1>
-    <h2>Flex Basis</h2>
+    <h2>Shrink e Grow</h2>
     <div class="conteiner">
-        <div class="item">A</div>
-        <div class="item">Depois vem o B</div>
-        <div class="item">C</div>
-        <div class="item">Que tal D?</div>
-        <div class="item">E</div>
-        <div class="item">Wings Dings dos Gaster F</div>
-        <div class="item">Eu falo Pneumoultramicroscopicosili, Gaster!</div>
+        <div class="item" id="item1">Sou Padrão, só encolho...</div>
+        <div class="item" id="item2">Faço Ambos!</div>
+        <div class="item" id="item3">Diferentão, só cresço.</div>
     </div>
 </body>
 </html>
