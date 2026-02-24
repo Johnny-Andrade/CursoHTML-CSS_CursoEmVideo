@@ -26,18 +26,23 @@ header{
 }
 
 header > h1{
-    border: 1px dotted black;
+    /*border: 1px dotted black;*/
     flex: 0 0 200px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.39);
 }
 
 header > nav{
-    border: 1px dotted black;
+    /*border: 1px dotted black;*/
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-end;
 }
 
-header > nav > a{
+span#menu{
+    cursor: pointer;
+}
+
+header > nav > a, span#menu{
     background-color: black;
     color: white;
     padding: 10px;
@@ -47,7 +52,7 @@ header > nav > a{
     text-align: center;
 }
 
-header > nav > a:hover{
+header > nav > a:hover, span#menu:hover{
     background-color: white;
     color: black;
     transition-duration: .3s;
@@ -56,7 +61,7 @@ header > nav > a:hover{
 main{
     background-color: white;
     margin: 10px auto;
-    width: 60vw;
+    max-width: 750px;
     padding: 10px;
     border-radius: 10px;
     box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.418);

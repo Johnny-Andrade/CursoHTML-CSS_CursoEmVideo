@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu Flexbox</title>
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/mobile.css" media="screen and (max-width: 775px)">
 </head>
 <body>
     <header>
         <h1>Meu site</h1>
-        <nav>
+        <span onclick="clicMenu()" id="menu">Menu</span>
+        <nav id="itens">
             <a href="#">Opção 1</a>
             <a href="#">Opção 2</a>
             <a href="#">Opção 3</a>
@@ -24,5 +26,15 @@
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus illum suscipit nostrum velit tempore praesentium deleniti exercitationem repellat perferendis consequuntur est maxime, fugit animi quibusdam, cum deserunt ab iure aliquid!</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quos, officia quo inventore aliquam repudiandae nam quisquam asperiores facere exercitationem maxime omnis non similique blanditiis dolorum cupiditate tempora sapiente nihil. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo nisi tenetur, vitae maiores illo sit cumque facere? Debitis cumque voluptas excepturi optio commodi dolor iure sed.</p>
     </main>
+    <script>
+    function clicMenu(){
+        var itens = document.getElementById("itens");
+        if (itens.style.display =='flex'){
+            itens.style.display ="none"
+        }else{
+            itens.style.display = 'flex'
+        }
+    }
+</script>
 </body>
 </html>
